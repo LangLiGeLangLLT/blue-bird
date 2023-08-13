@@ -3,6 +3,8 @@ import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import GithubButton from './github-button'
 
+export const dynamic = 'force-dynamic'
+
 async function Page() {
   const supabase = createServerComponentClient<Database>({ cookies })
 
